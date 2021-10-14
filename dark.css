@@ -1,0 +1,447 @@
+@font-face {
+
+font-family: 'Cuprum';
+
+src: url('fonts/Cuprum-Regular.ttf') format('truetype');
+}
+
+body {
+	font-family: Cuprum;
+	margin: 0 auto;
+  background-color: #3b3b3b; 
+  
+}
+header {
+font-family: sans-serif;
+background-color: #080011;
+display: flex;
+justify-content: space-between;
+
+}
+.topbutton {
+width:150px;
+border:2px solid #ccc;
+background:#f7f7f7;
+text-align:center;
+padding:10px;
+position:fixed;
+bottom:50px;
+right:50px;
+cursor:pointer;
+color:#333;
+font-family:Cuprum;
+font-size:20px;
+border-radius: 5px;
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+-khtml-border-radius: 5px;
+text-decoration: none;
+}
+.logo-img{
+width: 200px;
+}
+.tel ul li{
+ font-size: 25px;
+ list-style-type: none;
+ float: left;
+ padding: 20px 15px;
+ color: #fff;
+ margin-right: 10px;
+
+ }
+ .tel ul li a{
+ color: #6f8ca7;
+ text-decoration: none;
+ 
+ }
+.tel ul li a:hover {
+opacity: 1;
+background: #002137;
+transition:all 0.5s;
+color: white;
+}
+.call {
+width: 29px;
+margin-bottom: -5px;
+margin-left: 3px;
+}
+.call:hover {
+transform: scale(1.3);
+}
+.preim p {
+font-size: 55px;
+margin: 40px;
+display: flex;
+justify-content: center;
+color: #d4d4d4;
+}
+/* СЛАЙДЕР */
+.carousel-wrapper{
+  height:400px;
+  position:relative;
+  
+  margin:0 auto;
+  border: solid 2px;
+  background-image: url(images/HERO2.png);
+  background-attachment: fixed;
+	background-size: cover; 
+}
+
+.carousel-item{
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  padding:100px 150px;
+  opacity:0;
+  transition: all 0.5s ease-in-out;
+  margin: auto;
+  
+}
+.carousel-item p {
+color: white;
+font-size: 50px;
+font-family: sans-serif;
+}
+
+.arrow{
+  border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 35px;
+
+}
+
+.arrow-prev{
+  left: 30px;
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%) rotate(135deg);
+  
+
+}
+
+.arrow-next{
+    right: 30px;
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%) rotate(-45deg);
+  }
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    display: flex;
+}
+.content {
+   
+    min-width: 360px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.content img {
+    float: left;
+    width: 38%;
+    border: 15px solid #d4d4d4;
+    margin-right: 40px;
+    margin-top: 15px;
+    line-height: 1px;
+
+
+
+}
+.content h2{
+    font-size: 120%;
+    color: #3474b3;
+
+}
+.content aside{
+    font-size: 75%;
+    color: #9c9c9c;
+}
+.content article {
+  color: #d4d4d4;
+}
+.text {
+    float: left;
+    font-size: 34px;
+}
+
+
+
+
+/*Select every element*/
+[id^="item"] {
+    display: none;
+  }
+
+.item-1 {
+    z-index: 2;
+    opacity: 1;
+
+  }
+
+*:target ~ .item-1 {
+    opacity: 0;
+  }
+
+#item-1:target ~ .item-1 {
+    opacity: 1;
+  }
+
+#item-2:target ~ .item-2, #item-3:target ~ .item-3, #item-4:target ~ .item-4 {
+    z-index: 3;
+    opacity: 1;
+  }
+
+
+/* КОНЕЦ СЛАЙДЕРА*/
+/*ТОВАРНЫЕ БЛОКИ*/
+.tovarses {
+display: flex;
+justify-content: center;
+margin: 0 auto;
+}
+.img-textes {
+display: flex;
+justify-content: center;
+margin: 0 auto;
+border: 9px solid #737373;
+width: 1100px;
+margin: 50px;
+}
+.tovar-img {
+
+}
+.tovar-img img{
+width: 400px;
+height: 400px;
+}
+.tovars-textes {
+margin: auto;
+margin-left: 30px;
+font-family: Cuprum;
+margin-left: 100px;
+}
+.tovars-textes a {
+font-size: 3rem;
+font-weight: 700;
+color: #819bf9;
+}
+.tovars-textes h2 {
+font-size: 2rem;
+color: #d4d4d4;
+}
+.tovars-textes p {
+font-size: 1.7rem;
+color: #d4d4d4;
+}
+.tovars-opis {
+font-size: 45px;
+margin: 20px;
+display: flex;
+justify-content: center;
+color: #d4d4d4;
+}
+.ssylka-tov {
+display: flex;
+justify-content: center;
+margin: 0 auto;
+padding-bottom: 40px;
+}
+.ssylka-tov a {
+font-family: Cuprum;
+text-decoration: none;
+margin: 10px;
+font-size: 35px;
+color: #7b7b7b;
+}
+.type-tov {
+display: flex;
+justify-content: center;
+margin: 0 auto;
+font-size: 40px;
+}
+
+/*БЛОК ПЕРСОНАЛА*/
+.personal {
+display: flex;
+justify-content: center;
+margin: 0 auto;
+}
+.lichnost {
+margin: 40px;
+}
+.lichnost img {
+margin: 0 auto;
+display: flex;
+justify-content: center;
+}
+.lichnost h1 {
+margin: 0 auto;
+display: flex;
+justify-content: center;
+font-size: 40px;
+color: #d4d4d4;
+}
+.lichnost p {
+margin: 0 auto;
+display: flex;
+justify-content: center;
+font-size: 20px;
+color: #d4d4d4;
+}
+/* БУДУЩИЕ РАБОТНИКИ*/
+.works {
+
+}
+.works img {
+margin: 0 auto;
+display: flex;
+justify-content: center;
+}
+.works p {
+max-width: 1279px;
+margin: 0 auto;
+display: flex;
+justify-content: center;
+font-size: 35px;
+margin-top: 40px;
+color: #d4d4d4;
+}
+/* FOOTER*/
+footer {
+	background-color: #202124;
+}
+.copyright {
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background-color: #202124;
+	color: #FFFFFF;
+	font-weight: lighter;
+	letter-spacing: 5px;
+	border-top-width: 2px;
+}
+.t-button {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  font-size: 33px;
+  color: black;
+  margin-bottom: 13px;
+  background-color: white;
+  cursor: pointer;
+  max-width: 350px;
+}
+
+/* рассылка*/
+.elmail input {
+width: 500px;
+height: 30px;
+margin: 10px;
+text-align: center;
+font-size: 20px;
+}
+.elmail {
+margin: 0 auto;
+display: flex;
+justify-content: center;	
+}
+.buttone {
+margin: 0 auto;
+display: flex;
+justify-content: center;
+padding: 20px;
+}
+.buttone img {
+width: 300px;
+}
+
+.subscribe:hover {
+transform: scale(1.1);
+}
+/*БЛОК "О НАС"*/
+.o-nas {
+margin: 0 auto;
+display: flex;
+justify-content: center; 
+max-width: 1279px;
+padding: 20px;
+}
+.o-nas-txt {
+padding-left: 30px;
+}
+.o-nas-txt p {
+font-size: 25px;
+color: white;
+}
+
+@media (width: 1366px) and (height: 1024px) {
+.topbutton {
+width:200px;
+font-size:25px;
+}
+.preim p {
+font-size: 65px;
+}
+
+.personal {
+display: block;
+}
+.lichnost img {
+width: 300px;
+}
+.lichnost h1 {
+font-size: 50px;
+}
+.lichnost p {
+font-size: 27px;
+}
+.elmail input {
+width: 599px;
+height: 50px;
+}
+}
+@media (width: 1024px) and (height: 1366px) {
+.topbutton {
+width:250px;
+font-size:40px;
+}
+.preim p {
+font-size: 61px;
+}
+.carousel-item {
+  padding:50px 150px;
+}
+.text {
+font-size: 29px;
+}
+
+.personal {
+display: block;
+}
+.lichnost img {
+width: 300px;
+}
+.lichnost h1 {
+font-size: 50px;
+}
+.lichnost p {
+font-size: 27px;
+}
+.works img {
+width: 1000px;
+}
+.works p {
+padding: 25px;
+}
+.elmail input {
+width: 600px;
+height: 40px;
+}
+}
